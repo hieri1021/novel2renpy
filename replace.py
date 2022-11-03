@@ -97,11 +97,11 @@ def get_name(file):
     if file.endswith('.docx'):
         buf = []
 
-        doc = docx.Document(file)
+        doc = docx.Document(file) # wordファイルの場合
         for para in doc.paragraphs:
             buf.append(para.text)
 
-    elif file.endswith('.txt'):
+    elif file.endswith('.txt'): # txtファイルの場合
 
         with open(file,'r',encoding='utf-8') as f:
             buf = f.readlines()
