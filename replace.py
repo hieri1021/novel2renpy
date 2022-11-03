@@ -94,10 +94,10 @@ def get_name(file):
     global buf,attention_root,attention_canvas
 
     # ファイルの中身を読み込む
-    if file.endswith('.docx'):
+    if file.endswith('.docx'): # wordファイルの場合
         buf = []
 
-        doc = docx.Document(file) # wordファイルの場合
+        doc = docx.Document(file)
         for para in doc.paragraphs:
             buf.append(para.text)
 
