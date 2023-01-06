@@ -48,6 +48,7 @@ def change_name(i, list, name_list):
         list[i] = '\n' + name[-1] + ' "' + list[i] + '"'
 
 
+
 # ファイルのディレクトリを取得する関数
 def text_view(event):
     global file
@@ -56,6 +57,7 @@ def text_view(event):
     
     root1.quit()
     root1.destroy()
+
 
 # 新しい名前を取得する関数
 def get():
